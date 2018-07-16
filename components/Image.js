@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 
-export default class Image extends Component {
+export default class Picture extends Component {
   render() {
-    let pic = {
-      uri: "http://bdfjade.com/data/out/154/6564985-random-picture.jpg"
-    };
-    return <Image> source={pic} </Image>;
+    // let pic = {
+    //   uri:
+    //     "https://images.unsplash.com/photo-1531674590200-f5e4c43f31de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44c88230f10a563c9dd67d6456dc1c35&auto=format&fit=crop&w=2850&q=80"
+
+    return (
+      <Image source={require("../photo-1531674590200-f5e4c43f31de.jpeg")} />
+    );
   }
 }
