@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Button } from "react-native";
+import { Button, Alert } from "react-native";
+import Profile from "../components/Profile";
 
 export default class LearnMore extends Component {
+  onPressLearnMore = () => {
+    Alert.alert("Thank you for pressing!");
+  };
   render() {
-    onPressLearnMore = () => {
-      alert("Thank you for pressing!");
-    };
     return (
       <Button
         onPress={this.onPressLearnMore}

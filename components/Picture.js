@@ -9,7 +9,7 @@ export default class Picture extends Component {
     return (
       <ImageBackground
         style={style.image}
-        source={require("../photo-1531674590200-f5e4c43f31de.jpeg")}
+        source={require("../photos/photo-1531674590200-f5e4c43f31de.jpeg")}
       >
         <Message />
         <LearnMore />
