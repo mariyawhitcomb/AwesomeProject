@@ -1,11 +1,21 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
 
-export default class Image extends Component {
+import { Image } from "react-native";
+
+export default class componentName extends Component {
   render() {
-    let pic = {
-      uri: "http://bdfjade.com/data/out/154/6564985-random-picture.jpg"
-    };
-    return <Image> source={pic} </Image>;
+    return (
+      <View>
+        <Image
+          style={{ width: 50, height: 50 }}
+          source={{
+            uri:
+              "https://facebook.github.io/react-native/docs/assets/favicon.png"
+          }}
+        />;
+      </View>
+    );
+
+
   }
 }
