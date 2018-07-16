@@ -5,7 +5,7 @@ import style from "../styleSheet";
 export default class Message extends Component {
   render() {
     return (
-      <View>
+      <View style={style.container}>
         <Text style={style.text}> WELCOME TO NEW YORK </Text>
       </View>
     );
