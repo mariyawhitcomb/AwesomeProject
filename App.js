@@ -1,23 +1,28 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { AppRegistry, StyleSheet, Image, Text, View } from "react-native";
 import Image from "./components/Image";
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <Text>Hello World</Text>
-        <Image />
+        <Image
+          style={styles.image}
+          source={{
+            uri: "https://wallpaperbrowse.com/media/images/750814.jpg"
+          }}
+        />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+  image: {
+    width: 200,
+    height: 200
   }
 });
+
+AppRegistry.registerComponent("App", () => App);
